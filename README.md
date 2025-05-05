@@ -44,7 +44,12 @@ Run the attendance system (python attendance.py).
 Contributions Welcome! 🚀
 Feel free to fork, improve, or adapt this project for your needs.
 
-📸 Screenshots / Demo and 🖼️ System Preview
+
+
+
+  📸 Screenshots / Demo and 🖼️ System Preview
+
+
 
 ![attendance](https://github.com/user-attachments/assets/68b06251-c217-4c3d-b083-44547196a78f)
 
