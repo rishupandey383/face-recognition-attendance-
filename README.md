@@ -44,3 +44,19 @@ Run the attendance system (python attendance.py).
 Contributions Welcome! 🚀
 Feel free to fork, improve, or adapt this project for your needs.
 
+
+
+![attendance](https://github.com/user-attachments/assets/68b06251-c217-4c3d-b083-44547196a78f)
+
+![Homepage](https://github.com/user-attachments/assets/1d85f976-7676-4534-91ed-aa82c5acccf0)
+
+![Registration of  students](https://github.com/user-attachments/assets/87b9f2ea-7427-46df-9030-e2427293988b)
+
+![student 1](https://github.com/user-attachments/assets/3f04a260-ce25-42d3-89bb-43c83c374ad4)
+
+![student2](https://github.com/user-attachments/assets/70b964c6-be69-4b24-a436-df097f0b9931)
+
+
+
+
+
