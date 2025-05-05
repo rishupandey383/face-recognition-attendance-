@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="attendance">
+        <h2>Attendance Records</h2>
+        
+        <div class="date-selector">
+            <h3>Select Date:</h3>
+            <ul>
+                {% for date, file in attendance_files %}
+                    <li><a href="{{ url_for('attendance', date=date) }}" {% if date == selected_date %}class="active"{% endif %}>{{ date }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+        {% if selected_date %}
+            <div class="records">
+                <h3>Attendance for {{ selected_date }}</h3>
+                {% if records %}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for record in records %}
+                                <tr>
+                                    <td>{{ record[0] }}</td>
+                                    <td>{{ record[1] }}</td>
+                                    <td>{{ record[2] }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p>No attendance records found for this date.</p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </section>
+{% endblock %}

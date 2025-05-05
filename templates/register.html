@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="register">
+        <h2>Register New User</h2>
+        <form method="POST" action="{{ url_for('register') }}">
+            <div class="form-group">
+                <label for="user_id">User ID:</label>
+                <input type="text" id="user_id" name="user_id" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <button type="submit" class="btn">Start Face Capture</button>
+        </form>
+        
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Fill in the User ID and Full Name fields</li>
+                <li>Click "Start Face Capture"</li>
+                <li>Allow camera access when prompted</li>
+                <li>Position your face in the center of the frame</li>
+                <li>The system will automatically capture 100 images</li>
+                <li>Press ESC to cancel if needed</li>
+            </ol>
+        </div>
+    </section>
+{% endblock %}

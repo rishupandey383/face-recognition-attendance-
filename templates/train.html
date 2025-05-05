@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="train">
+        <h2>Train Recognition Model</h2>
+        <p>After registering new users, you need to train the recognition model.</p>
+        
+        <form method="POST" action="{{ url_for('train') }}">
+            <button type="submit" class="btn">Train Model</button>
+        </form>
+        
+        <div class="notes">
+            <h3>Notes:</h3>
+            <ul>
+                <li>Training may take several minutes depending on the number of registered users</li>
+                <li>You should retrain the model after adding new users</li>
+                <li>The trained model will be saved for future use</li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

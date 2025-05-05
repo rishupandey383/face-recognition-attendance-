@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="hero">
+        <h2>Welcome to the Face Recognition Attendance System</h2>
+        <p>An automated solution for contactless attendance tracking using facial recognition technology.</p>
+        
+        <!-- Centered GIF -->
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <img 
+                src="{{ url_for('static', filename='s.gif') }}" 
+                alt="Face Recognition Demo"
+                style="max-width: 100%; height: auto; border-radius: 8px;"
+            >
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>Easy Registration</h3>
+                <p>Register new users with their facial data in just a few minutes.</p>
+            </div>
+            <div class="feature">
+                <h3>Accurate Recognition</h3>
+                <p>Our system achieves ~90% accuracy in controlled conditions.</p>
+            </div>
+            <div class="feature">
+                <h3>Contactless Operation</h3>
+                <p>No physical contact required, promoting hygiene and safety.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

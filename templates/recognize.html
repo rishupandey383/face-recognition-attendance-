@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="recognize">
+        <h2>Mark Attendance</h2>
+        <p>Use this page to mark attendance using face recognition.</p>
+        
+        <form method="POST" action="{{ url_for('recognize') }}">
+            <button type="submit" class="btn">Start Recognition</button>
+        </form>
+        
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Click "Start Recognition"</li>
+                <li>Allow camera access when prompted</li>
+                <li>Position your face in the center of the frame</li>
+                <li>The system will automatically recognize registered faces</li>
+                <li>Attendance will be marked for recognized users</li>
+                <li>Press ESC to exit early</li>
+            </ol>
+        </div>
+    </section>
+{% endblock %}
